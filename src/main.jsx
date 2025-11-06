@@ -1,8 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-
+import ReactGA from 'react-ga4';
 import App from './App.jsx'
-import { BrowserRouter, Route, Routes } from 'react-router';
+ReactGA.initialize(import.meta.env.VITE_GOOGLE_ANALYTICS)
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

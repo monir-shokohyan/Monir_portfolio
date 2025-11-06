@@ -1,4 +1,3 @@
-import React from "react";
 import { FaRegSmileWink } from "react-icons/fa";
 import { motion } from "framer-motion";
 import handsPen from "../assets/hands-heart.svg";
