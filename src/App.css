@@ -73,6 +73,6 @@ background: radial-gradient(circle, rgba(0, 0, 0, 0.438) 0%, rgba(0, 0, 0, 1) 77
 }
 .gradient-border {
   border-right: 2px solid transparent; 
-  border-image: linear-gradient(to bottom, #ffffff, #000000);
+  border-image: linear-gradient(to bottom, #ffffff, #000001);
   border-image-slice: 1; 
 }
