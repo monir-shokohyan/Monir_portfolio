@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(/src/assets/Font/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(/src/assets/Font/Poppins-Bold.ttf);
+}
+
+
+
+
+ .hero-heading{
+  font-weight: 400;
+    
+    font-family: Anton;
+    line-height: 1.5;
+    letter-spacing: -.13rem;
+    text-transform: uppercase;
+    text-wrap: balance;
+ }
+ @media (max-width: 768px) {
+  .hero-heading {
+    font-size: 2.5rem; 
+    letter-spacing: -.1rem; 
+  }
+}
+ .logo{
+    font-family: 'Poppins-Regular';
+    letter-spacing: .13rem;
+ }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins-Regular';
+    color: white;
+    background-color: black;
+}
+.photo-gradient{
+ background: #FFFFFF;
+background: radial-gradient(circle, rgba(0, 0, 0, 0.438) 0%, rgba(0, 0, 0, 1) 77%);
+}
+
+.parallelogram {
+  --p: 10px; 
+  
+  clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+  background: #3b3b3b;
+  color: white;
+
+}
+
+.parallelogram2 {
+  --p: 10px; 
+  
+  clip-path: polygon(0 0,calc(100% - var(--p)) 0,100% 100%,var(--p) 100%);
+  background: #3b3b3b;
+  color: white;
+}
+.section4 {
+  background: #ffff;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.gradient-border {
+  border-right: 2px solid transparent; 
+  border-image: linear-gradient(to bottom, #ffffff, #000000);
+  border-image-slice: 1; 
+}
