@@ -1,7 +1,6 @@
 import ReactLenis from "lenis/react";
 import Home from "./Components/Home";
 import NavBar from "./Components/NavBar";
-import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
@@ -17,6 +16,7 @@ const Layout = () => {
           wheelMultiplier: 1,
           smoothTouch: false,
           touchMultiplier: 2,
+          allowNestedScroll: true
         }}
       >
         <NavBar />
