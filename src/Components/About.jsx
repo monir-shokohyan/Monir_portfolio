@@ -5,9 +5,9 @@ import twoFingers from "../assets/hands-fingers-revert.svg";
 const About = () => {
   const [showMore, setShowMore] = useState(false);
   const text =
-    "I’m a 25-year-old MERN stack developer who loves turning ideas into sleek, functional web apps. When I’m not deep in code, you’ll probably find me designing cool graphics or sketching detailed graphite art.";
+    "I  engineer MERN stack applications that not only perform seamlessly but also delight with polished, intuitive design. Whether it’s a dynamic full-stack platform or a graphite sketch on paper, I thrive on transforming concepts into elegant, impactful realities.";
   const text2 =
-    "For me, tech and art go hand in hand — I build things that notonly work great but also look great. Whether it’s a full-stack project or a blank sheet of paper, I’m all about bringing creativity to life.";
+    "For me, code and design are inseparable — I craft solutions that not only function flawlessly but also captivate the eye. Whether it’s a robust backend system or a fresh canvas, I’m passionate about infusing innovation with aesthetic brilliance.";
 
   const [displayedText, setDisplayedText] = useState("");
 
@@ -35,7 +35,6 @@ const About = () => {
     };
   }, []);
 
-  console.log(displayedText);
 
   return (
     <div

@@ -1,4 +1,3 @@
-import React from "react";
 import bg from "../assets/background.png";
 import { FaRegSmileWink } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
@@ -8,11 +7,19 @@ import {
   SiExpress,
   SiMongodb,
   SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiAdobeaftereffects,
+  SiAdobepremierepro,
+  SiTauri,
+  SiElectron,
+  SiTypescript,
+  SiStyledcomponents,
+  SiThreedotjs,
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact, FaNodeJs } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
-import { TbBrandFramerMotion } from "react-icons/tb";
+import { TbBrandFramerMotion, TbBrandReactNative } from "react-icons/tb";
 import { FaBootstrap } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -39,6 +46,30 @@ const item = {
 };
 
 const Skills = () => {
+  const skills = [
+    { Icon: FaHtml5, label: "HTML5", hover: "group-hover:text-orange-600" },
+    { Icon: FaCss3Alt, label: "CSS3", hover: "group-hover:text-blue-600" },
+    { Icon: SiTailwindcss, label: "Tailwind", hover: "group-hover:text-sky-400" },
+    { Icon: IoLogoJavascript, label: "JavaScript", hover: "group-hover:text-yellow-400" },
+    { Icon: FaReact, label: "React", hover: "group-hover:text-cyan-400" },
+    { Icon: TbBrandReactNative, label: "React Native", hover: "group-hover:text-cyan-500" },
+    { Icon: RiNextjsFill, label: "Next.js", hover: "group-hover:text-gray-200" },
+    { Icon: FaNodeJs, label: "Node.js", hover: "group-hover:text-green-600" },
+    { Icon: SiExpress, label: "Express", hover: "group-hover:text-gray-400" },
+    { Icon: SiMongodb, label: "MongoDB", hover: "group-hover:text-green-500" },
+    { Icon: SiTypescript, label: "TypeScript", hover: "group-hover:text-blue-500" },
+    { Icon: SiStyledcomponents, label: "Styled Components", hover: "group-hover:text-pink-400" },
+    { Icon: SiAdobeillustrator, label: "Illustrator", hover: "group-hover:text-orange-500" },
+    { Icon: SiAdobephotoshop, label: "Photoshop", hover: "group-hover:text-blue-700" },
+    { Icon: SiAdobeaftereffects, label: "After Effects", hover: "group-hover:text-purple-600" },
+    { Icon: SiAdobepremierepro, label: "Premiere", hover: "group-hover:text-purple-400" },
+    { Icon: SiThreedotjs, label: "Three.js", hover: "group-hover:text-gray-200" },
+    { Icon: SiTauri, label: "Tauri", hover: "group-hover:text-gray-600" },
+    { Icon: SiElectron, label: "Electron.js", hover: "group-hover:text-blue-400" },
+    { Icon: TbBrandFramerMotion, label: "Framer Motion", hover: "group-hover:text-yellow-500" },
+    { Icon: FaBootstrap, label: "Bootstrap 5", hover: "group-hover:text-purple-500" },
+  ];
+
   return (
     <div
       id="skills"
@@ -62,64 +93,7 @@ const Skills = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.2 }}
       >
-        {[
-          {
-            Icon: FaHtml5,
-            label: "HTML5",
-            hover: "group-hover:text-orange-600",
-          },
-          {
-            Icon: FaCss3Alt,
-            label: "CSS3",
-            hover: "group-hover:text-blue-600",
-          },
-          {
-            Icon: SiTailwindcss,
-            label: "Tailwind",
-            hover: "group-hover:text-sky-400",
-          },
-          {
-            Icon: IoLogoJavascript,
-            label: "JavaScript",
-            hover: "group-hover:text-yellow-400",
-          },
-          { Icon: FaReact, label: "React", hover: "group-hover:text-cyan-400" },
-          {
-            Icon: RiNextjsFill,
-            label: "Next.js",
-            hover: "group-hover:text-gray-200",
-          },
-          {
-            Icon: FaNodeJs,
-            label: "Node.js",
-            hover: "group-hover:text-green-600",
-          },
-          {
-            Icon: SiExpress,
-            label: "Express",
-            hover: "group-hover:text-gray-400",
-          },
-          {
-            Icon: SiMongodb,
-            label: "MongoDB",
-            hover: "group-hover:text-green-500",
-          },
-          {
-            Icon: SiAdobeillustrator,
-            label: "Illustrator",
-            hover: "group-hover:text-orange-500",
-          },
-          {
-            Icon: TbBrandFramerMotion,
-            label: "Framer Motion",
-            hover: "group-hover:text-yellow-500",
-          },
-          {
-            Icon: FaBootstrap,
-            label: "Bootstrap 5",
-            hover: "group-hover:text-purple-500",
-          },
-        ].map(({ Icon, label, hover }, index) => (
+        {skills.map(({ Icon, label, hover }, index) => (
           <motion.div
             key={index}
             variants={item}

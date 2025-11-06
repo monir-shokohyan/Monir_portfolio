@@ -33,6 +33,14 @@ const Services = () => {
       title: "Art Direction",
       desc: "Shaping visuals, tone, and style with a creative edge that makes every project stand out.",
     },
+    {
+      title: "Software Development & Design",
+      desc: "Building robust, scalable, and maintainable software solutions while keeping user experience and design in mind.",
+    },
+    {
+      title: "Mobile Development & Design",
+      desc: "Creating mobile apps with seamless performance, intuitive design, and cross-platform compatibility.",
+    },
   ];
 
   return (

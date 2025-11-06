@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
 import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
-import { AiFillInstagram } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+import emailjs from "@emailjs/browser";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    user_name: "",
-    user_email: "",
+    name: "",
+    email: "",
     subject: "",
     message: "",
   });
@@ -20,8 +20,7 @@ const ContactForm = () => {
 
   // Handle form submit
   const handleSubmit = (e) => {
-    e.preventDefault();
-
+    e.preventDefault();    
     emailjs
       .send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID, // From .env
@@ -33,8 +32,8 @@ const ContactForm = () => {
         () => {
           setStatus("✅ Message sent successfully!");
           setFormData({
-            user_name: "",
-            user_email: "",
+            name: "",
+            email: "",
             subject: "",
             message: "",
           });
@@ -58,18 +57,18 @@ const ContactForm = () => {
         <div className="flex gap-4">
           <input
             type="text"
-            name="user_name"
+            name="name"
             placeholder="Your Name"
-            value={formData.user_name}
+            value={formData.name}
             onChange={handleChange}
             className="bg-gray-900 p-2 w-1/2 rounded focus:outline-none"
             required
           />
           <input
             type="email"
-            name="user_email"
+            name="email"
             placeholder="Your Email"
-            value={formData.user_email}
+            value={formData.email}
             onChange={handleChange}
             className="bg-gray-900 p-2 w-1/2 rounded focus:outline-none"
             required
@@ -107,7 +106,7 @@ const ContactForm = () => {
         <div className="flex items-center gap-8 text-4xl cursor-pointer">
           {/* Phone */}
           <a
-            href="tel:+918638201853"
+            href="tel:+256750179642"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-125 transition-all duration-300"
@@ -117,22 +116,25 @@ const ContactForm = () => {
 
           {/* Email */}
           <a
-            href="mailto:anishraut.555@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "mailto:monir.shekoyans1@gmail.com";
+            }}
             className="hover:scale-125 transition-all duration-300"
           >
             <IoIosMail />
           </a>
 
+
           {/* Instagram */}
           <a
-            href="https://instagram.com/anish_raut"
+            href="https://github.com/monir-shokohyan"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-125 transition-all duration-300"
           >
-            <AiFillInstagram />
+            <AiFillGithub />
           </a>
         </div>
       </div>

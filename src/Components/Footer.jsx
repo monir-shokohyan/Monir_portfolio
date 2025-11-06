@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import A from "../assets/A.png";
+import R from "../assets/R.png";
 import N from "../assets/N.png";
 import I from "../assets/I.png";
-import S from "../assets/S.png";
-import H from "../assets/H.png";
+import M from "../assets/M.png";
+import O from "../assets/O.png";
 
 // parent container → no stagger (we’ll control timing with random delays)
 const container = {
@@ -38,13 +38,11 @@ const circleVariant = {
 };
 
 const Footer = () => {
-  const letters = [A, N, I, S, H];
+  const letters = [M,O,N,I,R];
 
   // random delays for letters (0.2s–1.2s range)
   const randomLetterDelays = letters.map(() => 0.2 + Math.random() * 1);
 
-  // random delays for circles (0.5s–2s range)
-  const randomCircleDelays = letters.map(() => 0.5 + Math.random() * 1.5);
 
   return (
     <div id="footer">
@@ -57,13 +55,6 @@ const Footer = () => {
       >
         {letters.map((letter, index) => (
           <motion.div key={index} className="flex flex-col items-center gap-4">
-            {/* Circle animation (random delay) */}
-            <motion.div
-              className="bg-white h-[20px] w-[20px] lg:h-[40px] lg:w-[40px] rounded-full"
-              variants={circleVariant}
-              custom={randomCircleDelays[index]}
-            ></motion.div>
-
             {/* Letter animation (random delay) */}
             <motion.img
               src={letter}

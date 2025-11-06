@@ -45,7 +45,7 @@ const FollowMe = () => {
               Check out my projects and the code behind them.
             </motion.p>
             <motion.a
-              href="https://github.com/1anishraut?tab=repositories"
+              href="https://github.com/monir-shokohyan?tab=repositories"
               className="border rounded-full border-[#99000080] px-2 mt-4 shadow-lg hover:shadow-[#99000080] hover:scale-110 transition-all duration-300 mr-auto cursor-pointer"
               variants={fadeIn}
             >
@@ -78,7 +78,7 @@ const FollowMe = () => {
               Let’s connect and share ideas in tech & design.
             </motion.p>
             <motion.a
-              href="https://www.linkedin.com/in/anish-raut"
+              href="https://www.linkedin.com/in/monir-shokohyan/"
               className="border rounded-full border-[#99000080] px-2 mt-4 shadow-lg hover:shadow-[#99000080] hover:scale-110 transition-all duration-300 mr-auto cursor-pointer"
               variants={fadeIn}
             >
