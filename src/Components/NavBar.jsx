@@ -26,7 +26,7 @@ const NavBar = () => {
         {/* Left logo */}
         <ScrollLink to="hero" smooth={true} duration={600} offset={-70}>
           <h1 className="logo border border-red-700 rounded-full px-2 py-2 text-red-700 font-bold">
-            {isScrolled ? "<A/>" : "< ANISH / >"}
+            {isScrolled ? "<M/>" : "< MONIR / >"}
           </h1>
         </ScrollLink>
 

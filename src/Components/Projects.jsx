@@ -1,15 +1,14 @@
-import React from "react";
-import ProConnectLaptop from "../assets/Projects-Image/ProConnect-laptop.png";
-import ProConnectMobile from "../assets/Projects-Image/ProConnect-mobile.png";
-import DoorToMountainsLaptop from "../assets/Projects-Image/DoorToMountains-Laptop.png";
-import DoorToMountainsMobile from "../assets/Projects-Image/DoorToMountains-mobile.png";
-import WeatherAppLaptop from "../assets/Projects-Image/WeatherApp-laptop.png";
-import WeatherAppMobile from "../assets/Projects-Image/WeatherApp-mobile.png";
-import CampfireCoveLaptop from "../assets/Projects-Image/campfire-laptop.png";
-import CampfireCoveMobile from "../assets/Projects-Image/Campfire-portrait.png";
-import PizzeriaLaptop from "../assets/Projects-Image/Pizzeria-Laptop.png";
-import PizzeriaMobile from "../assets/Projects-Image/Pizzeria-mobile.png";
-import ConatctMangerTab from "../assets/Projects-Image/ContactManager.png";
+import JobLaptop from "../assets/Projects-Image/job-laptop.webp";
+import JobMobile from "../assets/Projects-Image/job-mobile.webp";
+import LotusLaptop from "../assets/Projects-Image/lotus-laptop.webp";
+import LotusMobile from "../assets/Projects-Image/lotus-mobile.webp";
+import SawdaLaptop from "../assets/Projects-Image/sawda-laptop.webp";
+import SawdaMobile from "../assets/Projects-Image/sawda-mobile.webp";
+import Shoplaptop from "../assets/Projects-Image/shop-laptop.webp";
+import ShopMobile from "../assets/Projects-Image/shop-mobile.webp";
+import SmsLaptop from "../assets/Projects-Image/sms-laptop.webp";
+import SmsMobile from "../assets/Projects-Image/sms-mobile.webp";
+
 import { FaRegSmileWink } from "react-icons/fa";
 import { CiLink } from "react-icons/ci";
 import { motion, AnimatePresence } from "framer-motion";
@@ -25,8 +24,8 @@ const fadeInUp = {
 const projectData = [
   {
     id: 1,
-    title: "ProConnect (Social Platform)",
-    link: "http://51.20.37.224/login",
+    title: "Sms-center (sms marketing platform)",
+    link: "https://sms2.aliftech.net/admin/#/auth",
     tech: [
       "Node.js",
       "MongoDB",
@@ -35,21 +34,29 @@ const projectData = [
       "Tailwind CSS",
       "Motion",
       "Git",
+      "Mantine UI",
+      "Charts.js",
+      "Redux Toolkit",
+      "Formik",
+      "Yup",
+      "Axios",
+      "JWT",
+      "TypeScript",
     ],
     points: [
       "Reduced page reload time to <350ms with optimized React.js and state management",
       "Built responsive UI and features (chat, requests, profiles, premium plans)",
       "Helps professionals connect, collaborate, and grow their network",
-      "Deployed on AWS",
+      "Deployed on Compute Engine with CI/CD for seamless updates",
     ],
     layout: "normal",
-    laptop: ProConnectLaptop,
-    mobile: ProConnectMobile,
+    laptop: SmsLaptop,
+    mobile: SmsMobile,
   },
   {
     id: 2,
-    title: "Campfire Cove (Resort Booking)",
-    link: "http://13.61.180.177/",
+    title: "Job platform (Job portal website)",
+    link: "http://178.157.91.221/ru",
     tech: [
       "Node.js",
       "MongoDB",
@@ -58,56 +65,66 @@ const projectData = [
       "Tailwind CSS",
       "Motion",
       "Git",
+      "Redux Toolkit",
+      "Formik",
+      "Yup", 
+      "TypeScript",
     ],
     points: [
-      "Built a dynamic MERN application showcasing Resort Booking, stays, and adventures",
-      "Integrated Razorpay for secure online bookings.",
-      "Developed admin dashboard to manage bookings and listings.",
+      "Built a dynamic MERN application showcasing job listings.",
+      "Created Resume creation option.",
+      "Developed admin dashboard to manage jobs and resumes.",
       "Optimized page load under 300ms for fast performance",
     ],
     layout: "reverse",
-    laptop: CampfireCoveLaptop,
-    mobile: CampfireCoveMobile,
+    laptop: JobLaptop,
+    mobile: JobMobile,
   },
   {
     id: 3,
-    title: "Door to Mountains (Travel Planner)",
-    link: "https://1anishraut.github.io/Door_to_Mountains/",
-    tech: ["React.js", "TailwindCSS", "Swiper.js", "GSAP"],
+    title: "Lotus Software ltd (Corporate Website)",
+    link: "https://lotus-soft-ltd.netlify.app/",
+    tech: ["React.js", "TailwindCSS", "Swiper.js", "GSAP", "mantine UI", "grok ai"],
     points: [
-      "Responsive travel planner website",
+      "Responsive Lotus Software limited website",
       "Interactive sliders with Swiper.js",
       "Animations powered by GSAP",
+      "Chatbot integration using Grok AI",
     ],
     layout: "normal",
-    laptop: DoorToMountainsLaptop,
-    mobile: DoorToMountainsMobile,
+    laptop: LotusLaptop,
+    mobile: LotusMobile,
   },
   {
     id: 4,
-    title: "Weather App",
-    link: "https://dancing-lily-a23375.netlify.app/",
-    tech: ["React.js", "OpenWeather API", "TailwindCSS"],
+    title: "Sawda (E-commerce Website)",
+    link: "http://sawda.vercel.app/",
+    tech: ["React.js", "OpenWeather API", "TailwindCSS", "Axios"],
     points: [
-      "Real-time weather updates with OpenWeather API",
+      "Responsive e-commerce website",
+      "Personalized user experience",
+      "e-Commerce functionalities",
       "Clean UI with responsive design",
     ],
     layout: "reverse",
-    laptop: WeatherAppLaptop,
-    mobile: WeatherAppMobile,
+    laptop: SawdaLaptop,
+    mobile: SawdaMobile,
   },
 
   {
     id: 5,
-    title: "Contact Organizer",
-    link: "https://1anishraut.github.io/contact-organizer/",
+    title: "Online Shop (E-commerce Website)",
+    link: "https://online-shop-shkn.vercel.app/",
     tech: ["React.js", "TailwindCSS", "Firebase", "GSAP"],
     points: [
       "Contact management app with CRUD operations",
       "Used Firebase for database and GSAP for animations",
+      "Implemented responsive design with TailwindCSS",
+      "Deployed on Vercel for easy access",
     ],
     layout: "normal",
-    laptop: ConatctMangerTab,
+    laptop: Shoplaptop,
+    mobile: ShopMobile,
   },
 ];
 
