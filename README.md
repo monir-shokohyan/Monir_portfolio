@@ -1,12 +1,43 @@
-# React + Vite
+# Monir's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](https://portfolio-monir-new.netlify.app/webshot.png)  
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio website! This site showcases my skills, projects, experience, and journey as a developer. Built with modern web technologies and deployed on Netlify.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 **Live Demo**: [https://portfolio-monir-new.netlify.app/](https://portfolio-monir-new.netlify.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- **Responsive Design** – Looks great on desktop, tablet, and mobile  
+- **Fast Loading** – Optimized for performance with Netlify CDN  
+- **Project Showcase** – Clean, interactive display of my best work  
+- **Smooth Animations** – Subtle effects using CSS/GSAP (if applicable)  
+- **Contact Form** – Functional form to reach out directly  
+- **SEO Optimized** – Meta tags, Open Graph, and structured data  
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology      | Purpose                     |
+|-----------------|-----------------------------|
+| HTML5           | Structure                   |
+| CSS3 / SCSS     | Styling & Responsiveness    |
+| JavaScript (ES6+) | Interactivity             |
+| [Framework]     | e.g., React, Vue, etc. *(update if used)* |
+| Netlify         | Hosting & CI/CD             |
+
+---
+
+## 📂 Project Structure
+
+```bash
+/
+├── index.html           # Main landing page
+├── /css                 # Stylesheets
+├── /js                  # JavaScript files
+├── /assets              # Images, icons, resume
+├── /projects            # Project details (if static)
+└── README.md            # You're here!
