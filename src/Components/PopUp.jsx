@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { VscPreview } from "react-icons/vsc";
 import handShake from "../assets/hands-shaka.svg";
 import CV from "../assets/Projects-Image/CV.pdf";
+import { useIsRtl } from "../i18n/useRtl";
+import { useTranslation } from "react-i18next";
 
 const PopUp = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -43,6 +45,8 @@ const PopUp = () => {
   const handlePreview = () => {
     window.open(CV, "_blank");
   };
+  const { t } = useTranslation()
+  const { isRTL } = useIsRtl()
 
   return (
     <AnimatePresence>
@@ -62,11 +66,11 @@ const PopUp = () => {
               <img src={handShake} alt="Handshake" className="h-[30px]" />
             </div>
 
-            <div className="flex-1 m-2">
+            <div className="flex-1 m-2" dir={isRTL ? 'rtl' : 'ltr'}>
               <p className="text-md text-gray-300">
-                Here’s my CV <br />
+                {t('popup.title')} <br />
                 <span className="text-[12px]">
-                  because apparently, LinkedIn isn’t enough
+                   {t('popup.description')}
                 </span>
               </p>
             </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import { useIsRtl } from "../i18n/useRtl";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,7 +15,7 @@ const NavBar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+ const { isRTL } = useIsRtl()
   return (
     <div
       className={`text-gray-400 fixed top-4 left-1/2 -translate-x-1/2 z-50 
@@ -116,6 +117,7 @@ const NavBar = () => {
             spy={true}
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
+            dir={isRTL ? 'rtl' : 'ltr'}
           >
            {t('navbar.about')}
           </ScrollLink>
@@ -128,6 +130,7 @@ const NavBar = () => {
             spy={true}
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
+            dir={isRTL ? 'rtl' : 'ltr'}
           >
             {t('navbar.projects')}
           </ScrollLink>
@@ -140,6 +143,7 @@ const NavBar = () => {
             spy={true}
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
+            dir={isRTL ? 'rtl' : 'ltr'}
           >
             {t('navbar.skills')}
           </ScrollLink>
@@ -153,6 +157,7 @@ const NavBar = () => {
             spy={true}
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
+            dir={isRTL ? 'rtl' : 'ltr'}
           >
             {t('navbar.services')}
           </ScrollLink>
@@ -165,6 +170,7 @@ const NavBar = () => {
             spy={true}
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
+            dir={isRTL ? 'rtl' : 'ltr'}
           >
             {t('navbar.contacts')}
           </ScrollLink>

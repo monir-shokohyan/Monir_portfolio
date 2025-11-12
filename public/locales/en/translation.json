@@ -127,6 +127,10 @@
                         "send" : "Send Message"
 
                     }
+                },
+                "popup" :{
+                    "title" : "Here’s my CV",
+                    "description" : "because apparently, LinkedIn isn’t enough"
                 }
     
 }    
