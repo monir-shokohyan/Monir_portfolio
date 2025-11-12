@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const {t} = useTranslation()
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -41,7 +43,7 @@ const NavBar = () => {
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
           >
-            About
+            {t('navbar.about')}
           </ScrollLink>
           <ScrollLink
             to="projects"
@@ -52,7 +54,7 @@ const NavBar = () => {
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
           >
-            Projects
+            {t('navbar.projects')}
           </ScrollLink>
           <ScrollLink
             to="skills"
@@ -63,7 +65,7 @@ const NavBar = () => {
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
           >
-            Skills
+            {t('navbar.skills')}
           </ScrollLink>
           <ScrollLink
             to="services"
@@ -74,7 +76,7 @@ const NavBar = () => {
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
           >
-            Services
+            {t('navbar.services')}
           </ScrollLink>
           <ScrollLink
             to="contact"
@@ -85,8 +87,9 @@ const NavBar = () => {
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
           >
-            Contact
+            {t('navbar.contacts')}
           </ScrollLink>
+          <LanguageSwitcher />
         </div>
 
         {/* Mobile Menu Button */}
@@ -114,7 +117,7 @@ const NavBar = () => {
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
           >
-            About
+           {t('navbar.about')}
           </ScrollLink>
           <ScrollLink
             to="projects"
@@ -126,7 +129,7 @@ const NavBar = () => {
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
           >
-            Projects
+            {t('navbar.projects')}
           </ScrollLink>
           <ScrollLink
             to="skills"
@@ -138,7 +141,7 @@ const NavBar = () => {
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
           >
-            Skills
+            {t('navbar.skills')}
           </ScrollLink>
 
           <ScrollLink
@@ -151,7 +154,7 @@ const NavBar = () => {
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
           >
-            Services
+            {t('navbar.services')}
           </ScrollLink>
           <ScrollLink
             to="contact"
@@ -163,8 +166,9 @@ const NavBar = () => {
             activeClass="text-red-700 font-semibold"
             className="border border-gray-700 rounded-full px-4 py-2 cursor-pointer"
           >
-            Contact
+            {t('navbar.contacts')}
           </ScrollLink>
+          <LanguageSwitcher ml={1} />
         </div>
       )}
     </div>

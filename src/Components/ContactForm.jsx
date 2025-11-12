@@ -3,6 +3,8 @@ import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 import { AiFillGithub } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
+import { useIsRtl } from "../i18n/useRtl";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -10,14 +12,15 @@ const ContactForm = () => {
     subject: "",
     message: "",
   });
-
+  
   const [status, setStatus] = useState("");
 
   // Handle form changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
+const { t } = useTranslation(); 
+const { isRTL } = useIsRtl()
   // Handle form submit
   const handleSubmit = (e) => {
     e.preventDefault();    
@@ -30,7 +33,7 @@ const ContactForm = () => {
       )
       .then(
         () => {
-          setStatus("✅ Message sent successfully!");
+          setStatus(t('contact.success'));
           setFormData({
             name: "",
             email: "",
@@ -39,7 +42,7 @@ const ContactForm = () => {
           });
         },
         (error) => {
-          setStatus("❌ Failed to send message. Try again.");
+          setStatus(t('contact.error'));
           console.error("EmailJS Error:", error);
         }
       );
@@ -58,46 +61,50 @@ const ContactForm = () => {
           <input
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder={t('contact.inputs.name')}
             value={formData.name}
             onChange={handleChange}
             className="bg-gray-900 p-2 w-1/2 rounded focus:outline-none"
             required
+            dir={isRTL ? "rtl" : "ltr"}
           />
           <input
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder={t('contact.inputs.email')}
             value={formData.email}
             onChange={handleChange}
             className="bg-gray-900 p-2 w-1/2 rounded focus:outline-none"
             required
+            dir={isRTL ? "rtl" : "ltr"}
           />
         </div>
         <input
           type="text"
           name="subject"
-          placeholder="Subject"
+          placeholder={t('contact.inputs.subject')}
           value={formData.subject}
           onChange={handleChange}
           className="bg-gray-900 p-2  rounded focus:outline-none"
           required
+          dir={isRTL ? "rtl" : "ltr"}
         />
         <textarea
           name="message"
-          placeholder="Message"
+          placeholder={t('contact.inputs.message')}
           rows="4"
           value={formData.message}
           onChange={handleChange}
           className="bg-gray-900 p-2 rounded focus:outline-none"
           required
+          dir={isRTL ? "rtl" : "ltr"}
         ></textarea>
 
         <button
           type="submit"
           className="bg-gray-900 text-white py-2  rounded-full hover:border border-[#99000080] hover:shadow-xl shadow-[#99000080] transition mx-20 cursor-pointer"
         >
-          Send Message
+          {t('contact.inputs.send')}
         </button>
         {status && <p className="text-center text-sm mt-2">{status}</p>}
       </form>

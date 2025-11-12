@@ -22,6 +22,8 @@ import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandFramerMotion, TbBrandReactNative } from "react-icons/tb";
 import { FaBootstrap } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import { useIsRtl } from "../i18n/useRtl";
 
 const container = {
   hidden: { opacity: 0 },
@@ -69,7 +71,8 @@ const Skills = () => {
     { Icon: TbBrandFramerMotion, label: "Framer Motion", hover: "group-hover:text-yellow-500" },
     { Icon: FaBootstrap, label: "Bootstrap 5", hover: "group-hover:text-purple-500" },
   ];
-
+const { t } = useTranslation();
+const { isRTL } = useIsRtl()
   return (
     <div
       id="skills"
@@ -78,9 +81,9 @@ const Skills = () => {
     >
       {/* Heading */}
       <div className="flex flex-col items-center gap-2 mb-12 px-2">
-        <h2 className="text-4xl md:text-7xl font-bold">[ SKILLS ]</h2>
-        <p className="text-red-900 flex flex-col md:flex-row items-center gap-4 text-center text-xl">
-          Powered by coffee, Wi-Fi, and questionable decisions
+        <h2 className="text-4xl md:text-7xl font-bold">{t('skills.title')}</h2>
+        <p className="text-red-900 flex flex-col md:flex-row items-center gap-4 text-center text-xl " dir={isRTL ? 'rtl' : 'ltr'}>
+          {t('skills.description')}
           <FaRegSmileWink />
         </p>
       </div>

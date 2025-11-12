@@ -1,6 +1,8 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import { useIsRtl } from "../i18n/useRtl";
 
 // Parent container: controls stagger
 const container = {
@@ -18,8 +20,9 @@ const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
-
 const FollowMe = () => {
+  const { t } = useTranslation()
+  const { isRTL } = useIsRtl()
   return (
     <div>
       <div className="section4 flex pt-[2px]">
@@ -31,7 +34,7 @@ const FollowMe = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
         >
-          <div className="p-4 flex flex-col">
+          <div className="p-4 flex flex-col" dir={isRTL ? "rtl" : "ltr"}> 
             <div className="mb-4">
               <FaGithub size={35} />
             </div>
@@ -39,10 +42,10 @@ const FollowMe = () => {
               className="text-lg font-semibold text-white"
               variants={fadeIn}
             >
-              Follow me on GitHub
+              {t("followMe.github.title")}
             </motion.h1>
             <motion.p className="text-gray-400 mt-2 text-sm" variants={fadeIn}>
-              Check out my projects and the code behind them.
+              {t("followMe.github.desc")}
             </motion.p>
             <motion.a
               href="https://github.com/monir-shokohyan?tab=repositories"
@@ -50,7 +53,7 @@ const FollowMe = () => {
               variants={fadeIn}
             >
               <h1 className="bg-black rounded-4xl w-20 py-2 text-center">
-                Follow
+                {t("followMe.github.cta")}
               </h1>
             </motion.a>
           </div>
@@ -64,7 +67,7 @@ const FollowMe = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
         >
-          <div className="p-4 flex flex-col">
+          <div className="p-4 flex flex-col" dir={isRTL ? "rtl" : "ltr"}>
             <div className="mb-4">
               <FaLinkedin size={35} />
             </div>
@@ -72,10 +75,10 @@ const FollowMe = () => {
               className="text-lg font-semibold text-white"
               variants={fadeIn}
             >
-              Connect with me on LinkedIn
+              {t("followMe.linkedin.title")}
             </motion.h1>
             <motion.p className="text-gray-400 mt-2 text-sm" variants={fadeIn}>
-              Let’s connect and share ideas in tech & design.
+              {t("followMe.linkedin.desc")}
             </motion.p>
             <motion.a
               href="https://www.linkedin.com/in/monir-shokohyan/"
@@ -83,7 +86,7 @@ const FollowMe = () => {
               variants={fadeIn}
             >
               <h1 className="bg-black rounded-4xl w-20 py-2 text-center">
-                Connect
+                {t("followMe.linkedin.cta")}
               </h1>
             </motion.a>
           </div>

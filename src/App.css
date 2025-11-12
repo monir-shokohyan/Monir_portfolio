@@ -10,13 +10,25 @@
   src: url(/src/assets/Font/Poppins-Bold.ttf);
 }
 
+@font-face {
+  font-family: Vazirmatn-Bold;
+  src: url(/src/assets/Font/Vazirmatn-Bold.ttf);
+}
 
+@font-face {
+  font-family: Vazirmatn-Regular;
+  src: url(/src/assets/Font/Vazirmatn-Regular.ttf);
+}
+@font-face {
+  font-family: Vazirmatn-extraBold;
+  src: url(/src/assets/Font/Vazirmatn-ExtraBold.ttf);
+}
 
 
  .hero-heading{
-  font-weight: 400;
+  /* font-weight: 400; */
     
-    font-family: Anton;
+    font-family: Vazirmatn-extraBold;
     line-height: 1.5;
     letter-spacing: -.13rem;
     text-transform: uppercase;

@@ -2,6 +2,8 @@ import { FaRegSmileWink } from "react-icons/fa";
 import { motion } from "framer-motion";
 import handsPen from "../assets/hands-heart.svg";
 import handsPunch from "../assets/hands-check.svg";
+import { useTranslation } from "react-i18next";
+import { useIsRtl } from "../i18n/useRtl";
 
 // Variants for animation
 const cardVariants = {
@@ -15,40 +17,42 @@ const cardVariants = {
 };
 
 const Services = () => {
-  const services = [
+  const { t } = useTranslation()
+  const { isRTL } = useIsRtl()
+   const services = [
     {
-      title: "Web Design",
-      desc: "Clean, modern, and responsive websites that don’t just look good — they actually work across all devices.",
+      title: t('services.services.0.title'),
+      desc: t('services.services.0.desc'),
     },
-    {
-      title: "UI/UX Design",
-      desc: "Designing intuitive interfaces and smooth user experiences that make people stay, not bounce.",
+     {
+      title: t('services.services.1.title'),
+      desc: t('services.services.1.desc'),
     },
-    {
-      title: "Product Design",
-      desc: "From concept to clickable prototype — building products that balance function with delightful design.",
+     {
+      title: t('services.services.2.title'),
+      desc: t('services.services.2.desc'),
     },
-    {
-      title: "Art Direction",
-      desc: "Shaping visuals, tone, and style with a creative edge that makes every project stand out.",
+     {
+      title: t('services.services.3.title'),
+      desc: t('services.services.3.desc'),
     },
-    {
-      title: "Software Development & Design",
-      desc: "Building robust, scalable, and maintainable software solutions while keeping user experience and design in mind.",
+     {
+      title: t('services.services.4.title'),
+      desc: t('services.services.4.desc'),
     },
-    {
-      title: "Mobile Development & Design",
-      desc: "Creating mobile apps with seamless performance, intuitive design, and cross-platform compatibility.",
+     {
+      title: t('services.services.5.title'),
+      desc: t('services.services.5.desc'),
     },
+   
   ];
-
   return (
     <div id="services" className="flex flex-col items-center gap-2 py-15 px-4 ">
       {/* Heading */}
       <div className="flex flex-col items-center gap-2 mb-4 md:mb-12">
-        <h2 className="text-4xl md:text-7xl font-bold">[ SERVICES ]</h2>
-        <p className="text-red-900 flex flex-col md:flex-row items-center gap-4 text-center text-xl">
-          Pixels to Perfection — your vision, my design <FaRegSmileWink />
+        <h2 className="text-4xl md:text-7xl font-bold">{t('services.title')}</h2>
+        <p dir={isRTL ? 'rtl' : 'ltr'} className="text-red-900 flex flex-col md:flex-row items-center gap-4 text-center text-xl">
+          {t('services.description')}<FaRegSmileWink />
         </p>
       </div>
 
@@ -74,10 +78,10 @@ const Services = () => {
               viewport={{ once: false, amount: 0.2 }}
               custom={i} // 👈 pass index for stagger delay
             >
-              <h1 className="text-md md:text-lg font-bold mb-2">
+              <h1 className={`text-md md:text-lg font-bold mb-2 text-${isRTL ? 'right' : 'left'}`} >
                 {service.title}
               </h1>
-              <p className="text-gray-400 text-sm">{service.desc}</p>
+              <p className={`text-gray-400 text-sm text-${isRTL ? 'right' : 'left'}`}>{service.desc}</p>
             </motion.div>
           ))}
         </div>
