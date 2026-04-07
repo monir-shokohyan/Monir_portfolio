@@ -15,6 +15,7 @@ import {
   SiTypescript,
   SiStyledcomponents,
   SiThreedotjs,
+  SiPostgresql,
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact, FaNodeJs } from "react-icons/fa6";
@@ -70,6 +71,8 @@ const Skills = () => {
     { Icon: SiElectron, label: "Electron.js", hover: "group-hover:text-blue-400" },
     { Icon: TbBrandFramerMotion, label: "Framer Motion", hover: "group-hover:text-yellow-500" },
     { Icon: FaBootstrap, label: "Bootstrap 5", hover: "group-hover:text-purple-500" },
+    { Icon: SiPostgresql, label: "PostgreSQL", hover: "group-hover:text-blue-500" },
+
   ];
 const { t } = useTranslation();
 const { isRTL } = useIsRtl()

@@ -11,7 +11,7 @@ import SmsMobile from "../assets/Projects-Image/sms-mobile.webp";
 
 import { FaRegSmileWink } from "react-icons/fa";
 import { CiLink } from "react-icons/ci";
-import { motion, AnimatePresence } from "framer-motion";
+import {motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useIsRtl } from "../i18n/useRtl";
 
@@ -28,16 +28,13 @@ const Projects = () => {
   const projectData = [
     {
       id: 1,
-      title: t("projects.projects.0.title"),
-      link: "https://sms2.aliftech.net/admin/#/auth",
-      tech: [
-        "Node.js", "MongoDB", "React.js", "Express", "Tailwind CSS", "Motion", "Git",
-        "Mantine UI", "Charts.js", "Redux Toolkit", "Formik", "Yup", "Axios", "JWT", "TypeScript",
-      ],
-      points: t("projects.projects.0.points", { returnObjects: true }),
+      title: t("projects.projects.2.title"),
+      link: "https://lotus.co.ug/",
+      tech: ["React.js", "TailwindCSS", "Swiper.js", "GSAP", "mantine UI", "grok ai", "Axios", "TypeScript", "Nodejs", "PostgreSQL"],
+      points: t("projects.projects.2.points", { returnObjects: true }),
       layout: "normal",
-      laptop: SmsLaptop,
-      mobile: SmsMobile,
+      laptop: LotusLaptop,
+      mobile: LotusMobile,
     },
     {
       id: 2,
@@ -54,13 +51,16 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: t("projects.projects.2.title"),
-      link: "https://lotus-soft-ltd.netlify.app/",
-      tech: ["React.js", "TailwindCSS", "Swiper.js", "GSAP", "mantine UI", "grok ai"],
-      points: t("projects.projects.2.points", { returnObjects: true }),
+      title: t("projects.projects.0.title"),
+      link: "https://sms2.aliftech.net/admin/#/auth",
+      tech: [
+        "Node.js", "MongoDB", "React.js", "Express", "Tailwind CSS", "Motion", "Git",
+        "Mantine UI", "Charts.js", "Redux Toolkit", "Formik", "Yup", "Axios", "JWT", "TypeScript",
+      ],
+      points: t("projects.projects.0.points", { returnObjects: true }),
       layout: "normal",
-      laptop: LotusLaptop,
-      mobile: LotusMobile,
+      laptop: SmsLaptop,
+      mobile: SmsMobile,
     },
     {
       id: 4,
