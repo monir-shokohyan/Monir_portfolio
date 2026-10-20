@@ -2,27 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-      rel="stylesheet"
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="M Monir Shokohyan — full-stack web & mobile developer (React, TypeScript, Node.js, React Native)."
     />
+    <!-- Fonts used above the fold: fetch them in parallel with the JS bundle -->
+    <link rel="preload" href="/fonts/Vazirmatn-ExtraBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin />
     <title>M Monir's Portfolio</title>
+    <style>
+      /* Paint the dark background before the CSS bundle arrives (avoids a white flash) */
+      html, body { background-color: #000; color: #fff; margin: 0; }
+    </style>
   </head>
   <body>
     <div id="root"></div>
-    <script dark= "true" src="https://widget.ethora.com/assistant.js"  id="chat-content-assistant" 
-    data-bot-id="690b427a546be9bdcf209f13_690b427b546be9bdcf209f21-bot@xmpp.ethoradev.com" 
-    data-bot-display-name ="Assistant" 
-    data-language="en" 
-    data-hide-when-offline="true" 
-    data-enable-sound="true" 
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- async: the chat widget must never hold up the page -->
+    <script async dark= "true" src="https://widget.ethora.com/assistant.js"  id="chat-content-assistant"
+    data-bot-id="690b427a546be9bdcf209f13_690b427b546be9bdcf209f21-bot@xmpp.ethoradev.com"
+    data-bot-display-name ="Assistant"
+    data-language="en"
+    data-hide-when-offline="true"
+    data-enable-sound="true"
     >
   </script>
-    <script type="module" src="/src/main.jsx"></script>
-
   </body>
 </html>

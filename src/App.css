@@ -1,27 +1,16 @@
 @import "tailwindcss";
 
 
+/* woff2 fonts live in /public/fonts so index.html can preload them */
 @font-face {
   font-family: Poppins-Regular;
-  src: url(/src/assets/Font/Poppins-Regular.ttf);
-}
-@font-face {
-  font-family: Poppins-Bold;
-  src: url(/src/assets/Font/Poppins-Bold.ttf);
-}
-
-@font-face {
-  font-family: Vazirmatn-Bold;
-  src: url(/src/assets/Font/Vazirmatn-Bold.ttf);
-}
-
-@font-face {
-  font-family: Vazirmatn-Regular;
-  src: url(/src/assets/Font/Vazirmatn-Regular.ttf);
+  src: url(/fonts/Poppins-Regular.woff2) format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: Vazirmatn-extraBold;
-  src: url(/src/assets/Font/Vazirmatn-ExtraBold.ttf);
+  src: url(/fonts/Vazirmatn-ExtraBold.woff2) format("woff2");
+  font-display: swap;
 }
 
 

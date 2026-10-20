@@ -1,0 +1,284 @@
+{
+  "navbar": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "services": "Services",
+    "contacts": "Contact"
+  },
+  "hero": {
+    "greeting": "HEY! I'M M MONIR SHOKOYAN, A",
+    "webDesigner": "WEB DESIGNER",
+    "illustrator": "ILLUSTRATOR",
+    "and": "And",
+    "inMind": "GOT A PROJECT IN MIND?",
+    "cta": "LET’S CHAT",
+    "downloadCv": "Download CV"
+  },
+  "about": {
+    "title": "AS I SAY HERE",
+    "description": "Ie engineer MERN stack applications that not only perform seamlessly but also delight with polished, intuitive design. Whether it’s a dynamic full-stack platform or a graphite sketch on paper, I thrive on transforming concepts into elegant, impactful realities."
+  },
+  "projects": {
+    "title": "[ SELECTED WORKS ]",
+    "description": "Yes, I actually made these… and they work (most of the time)",
+    "projects": [
+      {
+        "title": "Sms-center (sms marketing platform)",
+        "points": [
+          "Reduced page reload time to <350ms with optimized React.js and state management",
+          "Built responsive UI and features (chat, requests, profiles, premium plans)",
+          "Helps professionals connect, collaborate, and grow their network",
+          "Deployed on Compute Engine with CI/CD for seamless updates"
+        ]
+      },
+      {
+        "title": "Job platform (Job portal website)",
+        "points": [
+          "Built a dynamic MERN application showcasing job listings.",
+          "Created Resume creation option.",
+          "Developed admin dashboard to manage jobs and resumes.",
+          "Optimized page load under 300ms for fast performance"
+        ]
+      },
+      {
+        "title": "Lotus Software ltd (Corporate Website)",
+        "points": [
+          "Responsive Lotus Software limited website",
+          "Interactive sliders with Swiper.js",
+          "Animations powered by GSAP",
+          "Chatbot integration using Grok AI"
+        ]
+      },
+      {
+        "title": "Sawda (E-commerce Website)",
+        "points": [
+          "Responsive e-commerce website",
+          "Personalized user experience",
+          "e-Commerce functionalities",
+          "Clean UI with responsive design"
+        ]
+      },
+      {
+        "title": "Online Shop (E-commerce Website)",
+        "points": [
+          "Contact management app with CRUD operations",
+          "Used Firebase for database and GSAP for animations",
+          "Implemented responsive design with TailwindCSS",
+          "Deployed on Vercel for easy access"
+        ]
+      },
+      {
+        "title": "TrueBook (Unified ERP for East Africa)",
+        "points": [
+          "One platform for accounting, inventory, HR & payroll, CRM, projects and POS",
+          "Double-entry accounting with chart of accounts, journals, P&L and balance sheet",
+          "Multi-warehouse inventory with reorder alerts, batch tracking and stock valuation",
+          "Real-time dashboards and reports with PDF/Excel export"
+        ]
+      },
+      {
+        "title": "RiteChat (WhatsApp support & sales platform)",
+        "points": [
+          "Multi-tenant SaaS: each organization connects its own WhatsApp Business number",
+          "Shared team inbox with round-robin assignment, escalation, tags and canned replies",
+          "Visual no-code workflow builder for triggers, buttons, lists and hand-offs",
+          "Product catalog, cart and checkout inside the WhatsApp chat"
+        ]
+      },
+      {
+        "title": "RiteTask (Task & team management)",
+        "points": [
+          "Task and team management dashboard for office and field staff",
+          "Live staff map with Leaflet and real-time updates over Socket.IO",
+          "Charts and reports to track team progress",
+          "Secure staff login with persistent sessions"
+        ]
+      },
+      {
+        "title": "RiteEats (Restaurant & bar management)",
+        "points": [
+          "Product website for a complete restaurant & bar management system",
+          "Presents POS billing, kitchen automation, inventory, recipes and accounting",
+          "Edition comparison (Essentials, Plus, Ultimate) with feature breakdowns",
+          "Responsive Mantine UI with smooth animations"
+        ]
+      },
+      {
+        "title": "RitePayroll (Payroll software)",
+        "points": [
+          "Product website for multi-branch, multi-currency payroll software",
+          "Covers attendance, salary calculation, statutory deductions (PAYE, NSSF), loans and payslips",
+          "Industry and benefits sections with demo requests and brochure download",
+          "Responsive Mantine UI with smooth animations"
+        ]
+      },
+      {
+        "title": "RiteBooks Express (Accounting, inventory & POS)",
+        "points": [
+          "Product website for affordable accounting, inventory and POS software for small businesses",
+          "Built-in search (Ctrl + K) and quick section navigation",
+          "Demo requests and product brochure download",
+          "Responsive Mantine UI with smooth animations"
+        ]
+      },
+      {
+        "title": "Let's Give Africa (Donation platform)",
+        "points": [
+          "Donation platform connecting donors with verified organizations",
+          "CMS-driven pages managed from an admin panel",
+          "Volunteer, organization registration and transparency sections",
+          "Cookie consent, authentication and maps with Leaflet"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "[ SKILLS ]",
+    "description": "Powered by coffee, Wi-Fi, and questionable decisions",
+    "categories": [
+      {
+        "title": "Frontend",
+        "items": [
+          "JavaScript (ES6+), HTML, CSS/SCSS",
+          "React, Next.js, TypeScript, Vite",
+          "Redux Toolkit (createSlice, RTK Query, createAsyncThunk, createSelector, createEntityAdapter, listener middleware, redux-persist), SWR",
+          "Mantine, Ant Design, Tailwind, Bootstrap 5, Styled Components",
+          "Framer Motion, Three.js",
+          "i18next, RTL layouts",
+          "Feature-Sliced Design (FSD)"
+        ]
+      },
+      {
+        "title": "Maps & Location",
+        "items": [
+          "Leaflet, react-leaflet, marker clustering, OpenStreetMap tiles",
+          "Live staff map with animated markers and route playback",
+          "OSRM road snapping, Haversine distance geofencing",
+          "Real-time GPS tracking: Expo background location → Node/Socket.IO/Prisma → React-Leaflet dashboard"
+        ]
+      },
+      {
+        "title": "Mobile",
+        "items": [
+          "React Native, Expo, React Navigation, NativeWind",
+          "EAS Build, config plugins, expo prebuild",
+          "Background location tracking (foreground services, headless tasks)",
+          "Push & local notifications (expo-notifications, Firebase Cloud Messaging), deep linking",
+          "Secure storage, AsyncStorage, biometric authentication",
+          "Reanimated, Gesture Handler, Lottie",
+          "Image upload and compression",
+          "Android Studio, ProGuard/R8, ABI splits, adb logcat debugging"
+        ]
+      },
+      {
+        "title": "Desktop",
+        "items": [
+          "Electron.js, Tauri"
+        ]
+      },
+      {
+        "title": "Backend & Databases",
+        "items": [
+          "Node.js, Express.js, REST APIs",
+          "WebSockets, Socket.io",
+          "JWT, OAuth, automatic token refresh (access + refresh tokens)",
+          "Scheduled jobs (node-cron)",
+          "SQL, PostgreSQL, Prisma ORM",
+          "MongoDB, Mongoose",
+          "Firebase, Supabase"
+        ]
+      },
+      {
+        "title": "Integrations",
+        "items": [
+          "WhatsApp Business API, Meta APIs",
+          "AI/LLM API integration"
+        ]
+      },
+      {
+        "title": "Architecture",
+        "items": [
+          "Design patterns, Context/Provider pattern",
+          "UI state machines",
+          "Role-based permissions (RBAC)",
+          "Offline-first data sync"
+        ]
+      },
+      {
+        "title": "Design",
+        "items": [
+          "UI/UX design, Figma"
+        ]
+      },
+      {
+        "title": "DevOps & Tools",
+        "items": [
+          "Git, GitHub Actions (incl. self-hosted runners), CI/CD",
+          "Docker, Linux servers, SSH",
+          "nginx, PM2",
+          "Vercel, Netlify",
+          "Jest, Postman",
+          "Notion"
+        ]
+      }
+    ]
+  },
+  "services": {
+    "title": "[ SERVICES ]",
+    "description": "Pixels to Perfection — your vision, my design",
+    "services": [
+      {
+        "title": "Web Design",
+        "desc": "Clean, modern, and responsive websites that don’t just look good — they actually work across all devices."
+      },
+      {
+        "title": "UI/UX Design",
+        "desc": "Designing intuitive interfaces and smooth user experiences that make people stay, not bounce."
+      },
+      {
+        "title": "Product Design",
+        "desc": "From concept to clickable prototype — building products that balance function with delightful design."
+      },
+      {
+        "title": "Art Direction",
+        "desc": "Shaping visuals, tone, and style with a creative edge that makes every project stand out."
+      },
+      {
+        "title": "Software Development & Design",
+        "desc": "Building robust, scalable, and maintainable software solutions while keeping user experience and design in mind."
+      },
+      {
+        "title": "Mobile Development & Design",
+        "desc": "Creating mobile apps with seamless performance, intuitive design, and cross-platform compatibility."
+      }
+    ]
+  },
+  "followMe": {
+    "github": {
+      "title": "Follow me on GitHub",
+      "desc": "Check out my projects and the code behind them.",
+      "cta": "Follow"
+    },
+    "linkedin": {
+      "title": "Connect with me on LinkedIn",
+      "desc": "Let’s connect and share ideas in tech & design.",
+      "cta": "Connect"
+    }
+  },
+  "contact": {
+    "success": "✅ Message sent successfully!",
+    "error": "❌ Failed to send message. Try again.",
+    "inputs": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Message",
+      "subject": "Subject",
+      "send": "Send Message"
+    }
+  },
+  "popup": {
+    "title": "Here’s my CV",
+    "description": "because apparently, LinkedIn isn’t enough"
+  }
+}
