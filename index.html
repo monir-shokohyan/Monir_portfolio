@@ -32,14 +32,13 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- async: the chat widget must never hold up the page -->
-    <script async dark= "true" src="https://widget.chat.ethora.com/assistant.js"  id="chat-content-assistant"
-    data-bot-id="690b427a546be9bdcf209f13_690b427b546be9bdcf209f21-bot@xmpp.ethoradev.com"
-    data-bot-display-name ="Assistant"
-    data-language="en"
-    data-hide-when-offline="true"
-    data-enable-sound="true"
-    >
-  </script>
+    <!-- Ethora AI chat ("Portfolio Chatbot" app). async: the widget must never hold up the page -->
+    <script
+      async
+      src="https://app.chat.ethora.com/widget/assistant-a86891ff.js"
+      id="chat-content-assistant"
+      data-app-id="6ad745ceca753490abe0a7e2"
+      data-api-base="https://api.chat.ethora.com/v1"
+    ></script>
   </body>
 </html>
